@@ -417,6 +417,10 @@ div.sticky {
   margin: 0 auto;
 }
 
+#image{
+  max-width: 100%;
+}
+
 .smallImage {
   height: 100%;
   max-width: 200px;
