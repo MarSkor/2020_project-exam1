@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Your message have successfully been sent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpaceX | Your Message Was Sent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </head>
+  <body>
+
+<div class="bg-img bg-color">
+
+    <!--------------------Start of navigation-------------------->
+    <header>
+      <a href="index.html">
+        <img class="logo" src="images/spacex.png" alt="spacex logo" />
+      </a>
+      <nav>
+        <ul class="navLinks">
+          <li><a href="index.html" title="SpaceX">SpaceX</a></li>
+          <li><a href="upcoming-launches.html" title="Upcoming Launches">Upcoming Launches</a></li>
+          <li><a href="past-launches.html" title="Past Launches">Past Launches</a></li>
+          <li><a href="timeline.html" title="Timeline">Timeline</a></li>
+          <li><a class="active" href="contact.html" title="Contact">Contact</a></li>
+        </ul>
+      </nav>
+    <!--start of borrowed code, resource in nav.css-->
+      <a onclick="navOpen()" class="hamburger-menu" href="#"><label for="hamburger-menu"><i class="fas fa-bars"></i></label</a>
+    </header>
+
+    <div id="navResponsive" class="overlay">
+        <a class="close" onclick="navClose()">&times;</a>
+        <div class="navOverlayContent">
+          <a href="index.html">SpaceX</a>
+          <a href="upcoming-launches.html">Upcoming Launches</a>
+          <a href="past-launches.html">Past Launches</a>
+          <a href="timeline.html">Timeline</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+     <!--end of borrowed code, resource in nav.css-->
+    <!--------------------End of navigation-------------------->
+
+
+
+<!--------------------Content-------------------->
+<main class="contact-container">
+
+   <h1>Success!</h1>
+    <div class="center-align ">
+        <p>Your message have successfully been sent</p>
+        <div class="back">
+        <a class="linkButton" href="index.html#homepage">Back home</a>
+        </div>
+    </div>
+
+</main>
+
+</div>
+
+   
+    <script type="text/javascript" src="js/nav.js"></script>
+    
+  </body>
+</html>
