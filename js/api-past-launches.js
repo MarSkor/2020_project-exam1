@@ -19,6 +19,8 @@ function displayLaunch(result) {
   // console.log(result);
 
   const launchContainer = document.querySelector(".row");
+  const newImg = document.querySelector("img .smallImage")
+
 
   let html = "";
   for (let i = 0; i < result.length; i++) {
@@ -26,6 +28,10 @@ function displayLaunch(result) {
     if (result[i].upcoming === true) {
       continue;
     }
+
+    // if(result[i].links.patch.small === null){
+    //   newImg.src = "./images/no-image-available.jpg"
+    // }
 
     html += `<div class="column">
                 <div class="card">
@@ -43,7 +49,7 @@ function displayLaunch(result) {
                       result[i].links.article
                     } target='_blank' title="Go the the Article">the Article</a></b></p>
                 </div>
-            </div>`;
+            </div>`;    
   }
   launchContainer.innerHTML = html;
 }

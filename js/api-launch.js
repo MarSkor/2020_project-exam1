@@ -27,12 +27,16 @@ function createLaunchDetails(recentLaunch) {
 
   const launchNumber = document.querySelector(".flight-number");
   launchNumber.innerHTML =
-    `<p class="underline ">Flight Number:</p>` + recentLaunch.flight_number;
+    `<p class="underline">Flight Number:</p>` + recentLaunch.flight_number;
 
   //details
   const launchDetail = document.querySelector(".details");
   launchDetail.innerHTML =
-    `<p class="underline ">Mission Details:</p>` + recentLaunch.details;
+  `<p class="underline">Mission Details:</p>` + recentLaunch.details;
+
+  if(recentLaunch.details === null){
+    launchDetail.innerHTML = `<p class="underline">Could not find mission details</p>`
+  }
 
   //date
   const launchDate = document.querySelector(".launch-date");
@@ -43,6 +47,10 @@ function createLaunchDetails(recentLaunch) {
   //image
   const newImg = document.querySelector("#image");
   newImg.src = recentLaunch.links.patch.small
-  console.log(newImg)
+
+  if(recentLaunch.links.patch.small === null){
+    newImg.src = "./images/no-image-available.jpg"
+  }
+  // console.log(newImg)
 
 }
